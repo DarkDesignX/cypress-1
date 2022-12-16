@@ -4,6 +4,11 @@ Diese Arbeit ist nicht benotet. Das Resultat davon wird aber für das Testkonzep
 ## Deadline
 Das Feature muss bis am **19.12.2022 um 23:59** fertiggstellt und auf Github hochgeladen sein, damit wir es am 20.12.2022 Pair-reviewen können.
 
+## Mockup
+Das fertige Feature sollte in etwa so aussehen:
+![image](https://user-images.githubusercontent.com/88476449/208101605-54c0c312-f005-421b-85cf-cd9f52d8944d.png)
+
+
 ## Notwendige Funktionen
 - Es sollen nur „aktive“ Produkte gezeigt werden
 - Bei Produkten bei welchen Bestand <= 3 soll der Bestand rot eingefärbt werden
