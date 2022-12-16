@@ -11,20 +11,28 @@ function onProductsLoaded(request) {
 	var products = JSON.parse(request.responseText);
 
 	for (var i = 0; i < products.length; i++) {
-		var productRow = document.createElement("tr");
-		productsTable.appendChild(productRow);
+		if (products[i].active == 1) {
 
-		var nameCell = document.createElement("td");
-		nameCell.innerText = products[i].name;
-		productRow.appendChild(nameCell);
+			var productRow = document.createElement("tr");
+			productsTable.appendChild(productRow);
 
-		var priceCell = document.createElement("td");
-		priceCell.innerText = products[i].price ? "CHF " + products[i].price : "";
-		productRow.appendChild(priceCell);
+			var nameCell = document.createElement("td");
+			nameCell.innerText = products[i].name;
+			productRow.appendChild(nameCell);
 
-		var stockCell = document.createElement("td");
-		stockCell.innerText = products[i].stock;
-		productRow.appendChild(stockCell);
+			var priceCell = document.createElement("td");
+			priceCell.innerText = products[i].price ? "CHF " + products[i].price : "";
+			productRow.appendChild(priceCell);
+
+			var stockCell = document.createElement("td");
+			stockCell.innerText = products[i].stock;
+			productRow.appendChild(stockCell);
+
+			if (products[i].stock <= 3) {
+				productRow.style.color = "white";
+				productRow.style.backgroundColor = "red";
+			}
+		}
 	}
 }
 
