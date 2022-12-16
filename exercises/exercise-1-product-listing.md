@@ -1,6 +1,9 @@
 # Neues Feature: Produkte auf der Startseite
 Diese Arbeit ist nicht benotet. Das Resultat davon wird aber für das Testkonzept benötigt. Ich empfehle daher, dass man sich ernsthaft mit der Umsetzung dieses Features befasst.
 
+## Deadline
+Das Feature muss bis am **19.12.2022 um 23:59** fertiggstellt und auf Github hochgeladen sein, damit wir es am 20.12.2022 Pair-reviewen können.
+
 ## Notwendige Funktionen
 - Es sollen nur „aktive“ Produkte gezeigt werden
 - Bei Produkten bei welchen Bestand <= 3 soll der Bestand rot eingefärbt werden
