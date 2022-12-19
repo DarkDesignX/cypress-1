@@ -1,10 +1,6 @@
 <?php $page_title = "Home ★ Productive"; ?>
 <?php require "view/blocks/page_start.php"; ?>
 <h1>Welcome to Productive!</h1>
-<!-- <div class="field">
-	<label for="fizzbuzz-field">Number</label>
-	<input type="number" id="fizzbuzz-field" min="0" required>
-</div> -->
 <?php require "view/blocks/page_end.php"; ?>
 
 <script>
@@ -22,12 +18,24 @@ window.fizzbuzz = function (number) {
   return output || errorMsg
 }
 
-window.add = function (numbersString) {
-  // "1,2,3".split(',')
-  // => ["1","2","3"]
-}
+window.add = function (str, delimiter = ",") {
+	debugger
 
-// window.add("1,2")
-// => 3
+	if(str.endsWith(delimiter)) {
+		str = str.slice(0, -1)
+	}
+
+	const arr = str.split(delimiter)
+
+	let sum = 0;	
+
+	for (let i = 0; i < arr.length; i++) {
+		const str = parseInt(arr[i]);
+
+		sum += str;
+	}
+
+	return sum
+}
 
 </script>

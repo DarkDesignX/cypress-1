@@ -52,4 +52,28 @@ describe("add function", () => {
       assert.equal(result, 5)
     })
   }) 
+
+  it("should add more supplied numbers", () => {
+    cy.window().then((window) => {
+      const result = window.add("2,3,4,5")
+
+      assert.equal(result, 14)
+    })
+  }) 
+
+  it("can't end with a comma", () => {
+    cy.window().then((window) => {
+      const result = window.add("2,3,")
+
+      assert.equal(result, 5)
+    })
+  })
+
+  it("handles any delimiter", () => {
+    cy.window().then((window) => {
+      const result = window.add("2:3", ":" )
+
+      assert.equal(result, "5")
+    })
+  })
 })
