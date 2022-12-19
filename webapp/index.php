@@ -17,3 +17,12 @@
 <script src="controller/active-products.js"></script>
 
 <?php require "view/blocks/page_end.php"; ?>
+<script>
+class UserService {
+  validateUsername = function (username) {
+    // implement validation here
+  }
+}
+
+window.UserService = UserService;
+</script>
