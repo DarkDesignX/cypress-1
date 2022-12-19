@@ -9,12 +9,14 @@
 
 <script>
 window.fizzbuzz = function (number) {
-	//How to return 'fizzbuzz' if the number is devidable by 3 and 5
+	//	return 'fizz'
+
+	//How to return 'fizzbuzz' if the number is dividible by 3 and 5?
 	if (number % 3 === 0) {
-		return 'fizz'
+		return 'Fizz'
 	}
 	if (number % 5 === 0) {
-		return 'buzz'
+		return 'Buzz'
 	}
 }
 </script>
