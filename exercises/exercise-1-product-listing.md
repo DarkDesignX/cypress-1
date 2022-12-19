@@ -29,7 +29,6 @@ Das fertige Feature sollte in etwa so aussehen:
 - Die Liste der Produkte auf der Startseite kann nach Kategorie gefiltert werden
 - Die Liste von Produkten kann auf / absteigend nach Namen sortiert werden
 - Die Produkte werden in der Liste mit einem Vorschaubild dargestellt
-- Das Gewicht der Produkte wird in g eingegeben aber in kg in der Liste dargestellt
 
 ## Deadline
 - Pair-Reviews werden am 20.12 stattfinden
