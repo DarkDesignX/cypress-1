@@ -9,14 +9,25 @@
 
 <script>
 window.fizzbuzz = function (number) {
-	//	return 'fizz'
+  let output = ''
+  const errorMsg = 'Number must be divisible by 3 or 5'
 
-	//How to return 'fizzbuzz' if the number is dividible by 3 and 5?
-	if (number % 3 === 0) {
-		return 'Fizz'
-	}
-	if (number % 5 === 0) {
-		return 'Buzz'
-	}
+  if (number % 3 === 0) {
+    output += 'fizz'
+  }
+  if (number % 5 === 0) {
+    output += 'buzz'
+  }
+
+  return output || errorMsg
 }
+
+window.add = function (numbersString) {
+  // "1,2,3".split(',')
+  // => ["1","2","3"]
+}
+
+// window.add("1,2")
+// => 3
+
 </script>
