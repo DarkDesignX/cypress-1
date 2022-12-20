@@ -12,6 +12,6 @@
 			<th>Stock</th>
 		</tr>
 	</thead>
-	<tbody id="products-table"></tbody>
+	<tbody id="active-products-table"></tbody>
 </table>
 <script src="controller/active-products.js"></script>

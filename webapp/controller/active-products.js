@@ -1,4 +1,4 @@
-var productsTable = document.getElementById("products-table");
+var productsTable = document.getElementById("active-products-table");
 
 /**
  * Called when the products loading request succeeded.
