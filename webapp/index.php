@@ -5,13 +5,6 @@
 <h2>Our most popular products</h2>
 
 <!-- Plain JS implementation -->
-<div style="margin-bottom: 1em;">
-  <label for="category-filter">Nach Kategorie filtern: </label>
-  <select id="category-filter" name="category-filter">
-    <option value="">Kein Filter</option>
-  </select>
-</div>
-
 <table>
   <thead>
     <tr>
