@@ -60,3 +60,5 @@ const init = async function () { // an async wrapper function which allows me to
 
 init();
 </script>
+
+<?php require "view/blocks/page_end.php"; ?>
