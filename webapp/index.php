@@ -22,7 +22,7 @@ const updateProductTable = async function (table, productsToInsert) {
 
   // Insert the table rows for the found products
   const newTableRows = productsToInsert.map((product) => {
-    let thing = document.createElement('tr');
+    let tableRow = document.createElement('tr');
 
     const tds = [];
 
@@ -32,17 +32,17 @@ const updateProductTable = async function (table, productsToInsert) {
       let td = document.createElement('td');
       if(column == 'stock') {
         if (product[column] <= 3) {
-			thing.style.color = "white";
-			thing.style.backgroundColor = "red";
+			tableRow.style.color = "white";
+			tableRow.style.backgroundColor = "red";
         } else {
-          thing.style.color = 'black';
+          tableRow.style.color = 'black';
         }
       }
       td.innerText = product[column]; // dunno lol
-      thing.appendChild(td);
+      tableRow.appendChild(td);
     }
 
-    return thing
+    return tableRow
   })
 
   table.replaceChildren(...newTableRows)
